@@ -74,6 +74,29 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
             <XMarkIcon className='h-6 w-6 text-gray-400' />
           </button>
         </div>
+        {/* Menu Items */}
+        <div className="flex flex-col gap-10 text-2xl ml-[33%]">
+          <Link 
+            page='Home'
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage} 
+          />
+          <Link 
+            page='Benefits'
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}  
+          />
+          <Link 
+            page='Our Classes'
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}  
+          />
+          <Link 
+            page='Contact Us' 
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage} 
+          />
+        </div>  
       </div>
      )}
     </nav>
