@@ -4,6 +4,7 @@ import { SelectedPage } from "./types"
 import Home from "./components/Home/Home";
 import Benefits from "./components/Benefits/Benefits";
 import OurClasses from "./components/OurClasses/OurClasses";
+import ContactUs from "./components/ContactUs/ContactUs";
 
 
 
@@ -41,6 +42,7 @@ const App = () => {
         <OurClasses 
           setSelectedPage={setSelectedPage}
         />
+        <ContactUs setSelectedPage={setSelectedPage} />
       </div>
     </>
   )
